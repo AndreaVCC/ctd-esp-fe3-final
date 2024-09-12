@@ -79,9 +79,14 @@ form {
   flex-direction: column;
   align-items: center;
   width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.card button {
+  border-radius: 5px;
 }
 
 .card-img {
@@ -90,7 +95,6 @@ form {
   border-radius: 50%;
   margin-bottom: 15px;
   object-fit: cover;
-  background-color: #f0f0f0;
 }
 
 .card:hover {
@@ -154,9 +158,14 @@ main{
   background-color: rgb(243, 243, 243); 
 }
 
+.light .card-img {
+  background-color: #f0f0f0;
+}
+
+
 /* Tema oscuro (dark) */
 .dark {
-  background-color: #505050;
+  background-color: #2e2e2e;
   color: white;
 }
 
@@ -186,5 +195,9 @@ main{
 
 .dark footer p {
   color: black;
+}
+
+.dark .card {
+  background-color: #646464;
 }
 
